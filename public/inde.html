@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Descargas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 15px;
+            text-transform: uppercase;
+            transition: opacity 0.2s;
+            border: none;
+            cursor: pointer;
+            display: block; /* Asegura que el enlace se comporte como bloque */
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            color: white;
+        }
+
+        /* Colores específicos */
+        .blue { background-color: #007bff; font-size: 18px; }
+        .green { background-color: #1a8754; font-size: 18px;}
+        .dark { background-color: #212529; font-size: 18px;}
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Centro de Descargassssssss</h1>
+        <p>Haz clic en los botones para obtener tus archivos PDF.</p>
+
+        <div class="btn-container">
+            <a href="/comandos.pdf" download class="btn blue">Comandos Básicos de React</a>
+            
+            <a href="/ieee.pdf" download class="btn green">ISO / Estandar IEEE</a>
+            
+            <a href="/requerimientos.pdf" download class="btn dark">Requerimientos Funcionales y No Funcionales</a>
+            
+            <a href="/sha_256.pdf" download class="btn dark">Código Python Algoritmo SHA-256</a>
+            
+            <a href="/exam" class="btn dark">Regresar al Proyecto Principal</a>
+        </div>
+    </div>
+
+</body>
+</html>
